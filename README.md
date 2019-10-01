@@ -57,7 +57,7 @@ Porém, nem tudo pode ser uma variável. Devemos seguir as seguintes regras de n
 Exemplo:
 ```python
 numero = 42
-nome = "Joanelson"
+nome = "Jorge"
 ```
 
 ### Tipos de Dado
@@ -96,7 +96,94 @@ numero = int(input("Digite um numero: "))
 ### Saída de Dados
 
 Utilizamos a função ```print()```.
-Exemplo:
+Exemplos:
 ```python
+print(var)
+print("A soma de", a, "+", b, "eh igual a", soma)
+print("Geeks : % 2d, Portal : % 2f" %(1, 5.333))
+print('We are the {} who say "{}!"'.format('knights', 'Ni'))
+print(f"aaa {soma}")
+```
 
+### Operadores Aritméticos
+
+| Operador | Descrição       |
+| :------: | :-------------: |
+| +        | Adição          |
+| -        | Subtaração      |
+| *        | Multiplicação   |
+| /        | Divisão         |
+| //       | Divisão Inteira |
+| **       | Exponenciação   |
+| %        | Módulo          |
+
+### Operadores Relacionais
+
+| Operador | Descrição      |
+| :------: | :------------: |
+| ==       | Igual          |
+| !=       | Diferente      |
+| >        | Maior          |
+| >=       | Maior ou Igual |
+| <        | Menor          |
+| <=       | Menor ou Igual |
+
+### Operadores Lógicos
+
+| Operador | Descrição |
+| :------: | :-------: |
+| or       | Ou        |
+| and      | E         |
+| not      | Não       |
+
+### Estrutura Condicional (if)
+
+É uma estrutura que possibilita a escolha de um grupo de ações a serem executadas quando determinadas condições são ou não satisfeitas (controla o fluxo do programa).
+
+> [!IMPORTANT]
+> Sempre se atente à indentação (espaços ou tabs antes dos comandos) para que o interpretador saiba a execução correta!
+
+```python
+if(condicao1): 
+    # Satisfaz condicao1
+    x = 1
+elif(condicao2):
+    # Nao satisfaz condicao1 mas satisfaz condicao2
+    x = 2
+else:
+    # Nao satisfaz condicao1 nem condicao2
+    x = 777
+```
+
+### Estruturas de Repetição
+
+São estrutura que permitem executar mais de uma vez o mesmo comando ou conjunto de comandos, de acordo com uma condição ou com um contador.
+
+> [!IMPORTANT]
+> Sempre se atente à indentação (espaços ou tabs antes dos comandos) para que o interpretador saiba a execução correta!
+
+#### While (enquanto)
+
+* Executa o bloco **enquanto** a condição for verdadeira
+* É preciso de uma variável para poder auxiliar nas iterações, o **incrementador**
+* Geralmente, o número de iterações é desconhecido
+
+```python
+while(condicao):
+    # Acoes a serem executadas enquanto condicao for True
+```
+
+#### For (para)
+
+* Faz interações sob uma sequência
+* Range(x,y) gera uma sequência crescente de valores entre x e y-1
+* É utilizado quando sabemos o número de vezes que o código será repetido
+
+```python
+for valor in sequencia:
+    # Acoes a serem executadas dentro dessa sequencia
+
+for i in range(0, 3):
+    print(i)
+# Imprimira 0 1 2
 ```
