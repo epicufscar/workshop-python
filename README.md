@@ -1,6 +1,6 @@
 # Workshop Python Iniciante
 
-Repositório destinado ao Workshop de Python para Iniciantes. Aqui estarão as respostas para os exercícios (quando forem liberadas), e um guia (README.md) para a instalação, sintaxe, etc.
+Repositório destinado ao Workshop de Python para Iniciantes (utilizando Python 3). Aqui estarão as respostas para os exercícios (quando forem liberadas), e um guia (README.md) para a instalação, sintaxe, etc.
 
 ## Instalando o Python
 
@@ -140,7 +140,7 @@ print(f"aaa {soma}")
 
 É uma estrutura que possibilita a escolha de um grupo de ações a serem executadas quando determinadas condições são ou não satisfeitas (controla o fluxo do programa).
 
-> [!IMPORTANT]
+> **Importante**
 > Sempre se atente à indentação (espaços ou tabs antes dos comandos) para que o interpretador saiba a execução correta!
 
 ```python
@@ -159,8 +159,8 @@ else:
 
 São estrutura que permitem executar mais de uma vez o mesmo comando ou conjunto de comandos, de acordo com uma condição ou com um contador.
 
-> [!IMPORTANT]
-> Sempre se atente à indentação (espaços ou tabs antes dos comandos) para que o interpretador saiba a execução correta!
+>  **Importante**
+>   Sempre se atente à indentação (espaços ou tabs antes dos comandos) para que o interpretador saiba a execução correta!
 
 #### While (enquanto)
 
@@ -186,4 +186,109 @@ for valor in sequencia:
 for i in range(0, 3):
     print(i)
 # Imprimira 0 1 2
+```
+
+### Funções
+
+Uma função é uma sequência de instruções que computa um ou mais resultados que chamamos de parâmetros.
+Em Python, as funções possuem as seguintes características:
+* A ordem dos argumentos tem que ser a mesma
+* Podem não receber nenhum parâmetro
+* São definidas no início do código, como boas práticas
+* A função só é executada quando é chamada
+* Uma função pode chamar outra função
+
+> **Importante**
+> Sempre se atente à indentação (espaços ou tabs antes dos comandos) para que o interpretador saiba a execução correta!
+
+```python
+def funcao(parametro1, parametro2):
+    
+    # Corpo da funcao
+
+    return valor # Valor que a funcao retorna (pode nao retornar nada)
+
+# Chamando a funcao
+valor = funcao(argumento1, argumento2)
+```
+
+### Listas
+
+São sequências ou coleções ordenadas de valores. Cada valor na lista é identificado por um índice, começando por 0.
+
+```python
+# Declarando uma lista
+Lista = [1, 2, 3, 4, 5]
+#        0  1  2  3  4  (indices)
+
+# Criando uma lista vazia
+L = []
+
+# Acessando uma posicao da lista (indice 2)
+Lista[2] 
+
+# Modificando um elemento da lista
+Lista[2] = 8
+
+# Copiando listas
+L = Lista[:]
+L = Lista.copy()
+```
+
+#### Funções para Listas
+
+```python
+# Retorna o tamanho de uma lista
+len(Lista)
+
+# Adiciona um elemento a lista
+Lista.append(valor)
+
+# Remove um elemento da lista
+Lista.remove(valor)
+
+# Fatiamento de lista (da posicao x a y-1)
+Lista[x:y]
+
+# Pertencimento
+valor in Lista
+
+# Inserir um elemento em uma determinada posicao
+Insert(pos, valor)
+```
+
+#### Listas de Listas
+
+* Para percorrer os elementos utiizamos dois laços de repetição: um fica fixado na linha e o outro percorre as colunas
+
+```python
+# Declarando a matriz
+# 1 2 3
+# 4 5 6
+# 7 8 9
+matriz = [[1,2,3],[4,5,6],[7,8,9]]
+
+Linha_i_coluna_j = matriz[i][j]
+
+matriz[1][2] = 3 # Atribuicao de valor a um elemento
+```
+
+### Strings
+
+São sequências de caracteres, geralmente utilizadas para representar palavras, frases ou textos de um programa.
+Em Python, possuem as seguintes características:
+* São imutáveis, a não ser que as transformemos em uma lista
+* São delimitadas por aspas, duplas ```""``` ou simples ```''```
+* Podemos acessar elemento como nas listas
+* Alguns métodos de listas também são válidos para strings
+
+#### Métodos Úteis para Strings
+
+```python
+# Separacao de strings de acordo com um caractere ded referencia
+mensagem = 'Popcorntime, Netflix, Telecine'
+mensagem.split(',') # Imprimira ['Popcorntime', ' Netflix', ' Telecine']
+
+# Conversao de string em lista
+mensagem.list()
 ```
