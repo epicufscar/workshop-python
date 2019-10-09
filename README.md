@@ -1,6 +1,7 @@
 # Workshop Python Iniciante
 
 Repositório destinado ao Workshop de Python para Iniciantes (utilizando Python 3). Aqui estarão as respostas para os exercícios (quando forem liberadas), e um guia (README.md) para a instalação, sintaxe, etc.
+Link para os slides: https://drive.google.com/open?id=1lOtb1_-KjSF8kutEYD2hvGX1qg1wuoW2gyoab26TfbQ
 
 ## Instalando o Python
 
@@ -219,6 +220,7 @@ São sequências ou coleções ordenadas de valores. Cada valor na lista é iden
 ```python
 # Declarando uma lista
 Lista = [1, 2, 3, 4, 5]
+Lista = [x for x in range(5)]
 #        0  1  2  3  4  (indices)
 
 # Criando uma lista vazia
@@ -244,6 +246,9 @@ len(Lista)
 # Adiciona um elemento a lista
 Lista.append(valor)
 
+# Inserir um elemento em uma determinada posicao
+Lista.insert(pos, valor)
+
 # Remove um elemento da lista
 Lista.remove(valor)
 
@@ -252,9 +257,6 @@ Lista[x:y]
 
 # Pertencimento
 valor in Lista
-
-# Inserir um elemento em uma determinada posicao
-Insert(pos, valor)
 ```
 
 #### Listas de Listas
