@@ -1,7 +1,7 @@
 # Workshop Python Iniciante
 
 Repositório destinado ao Workshop de Python para Iniciantes (utilizando Python 3). Aqui estarão as respostas para os exercícios (quando forem liberadas), e um guia (README.md) para a instalação, sintaxe, etc.
-Link para os slides: bit.ly/2AWa2ei
+Link para os slides: https://drive.google.com/open?id=1lOtb1_-KjSF8kutEYD2hvGX1qg1wuoW2gyoab26TfbQ
 
 ## Instalando o Python
 
