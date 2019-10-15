@@ -339,4 +339,4 @@ def fatorial_rec(num):
 Na solução recursiva, temos um ```if``` que verifica se estamos no caso base (num == 0) ou no caso recursivo.
 O caso recursivo chama novamente a função ```fatorial_rec()``` passando *(num-1)* como parâmetro. Assim eventualmente a função chamará ```fatorial_rec(0)```, nosso caso base, e então retornará o resultado para a chamada ```fatorial_rec(1)```, que vai multiplicar o retorno por 1 e retornar o resultado para a chamada ```fatorial_rec(2)```, que multiplicará o retorno por 2 e retornaráa o resultado para a chamada ```fatorial_rec(3)```, e assim por diante.
 
-!(https://github.com/epicufscar/workshop-python/img/img_fatorial.png)
+![Fatorial Recursivo](https://github.com/epicufscar/workshop-python/blob/master/img/img_fatorial.png)
