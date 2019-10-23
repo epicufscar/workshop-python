@@ -188,30 +188,6 @@ for i in range(0, 3):
 # Imprimira 0 1 2
 ```
 
-### Funções
-
-Uma função é uma sequência de instruções que computa um ou mais resultados que chamamos de parâmetros.
-Em Python, as funções possuem as seguintes características:
-* A ordem dos argumentos tem que ser a mesma
-* Podem não receber nenhum parâmetro
-* São definidas no início do código, como boas práticas
-* A função só é executada quando é chamada
-* Uma função pode chamar outra função
-
-> **Importante**
-> Sempre se atente à indentação (espaços ou tabs antes dos comandos) para que o interpretador saiba a execução correta!
-
-```python
-def funcao(parametro1, parametro2):
-    
-    # Corpo da funcao
-
-    return valor # Valor que a funcao retorna (pode nao retornar nada)
-
-# Chamando a funcao
-valor = funcao(argumento1, argumento2)
-```
-
 ### Listas
 
 São sequências ou coleções ordenadas de valores. Cada valor na lista é identificado por um índice, começando por 0.
@@ -271,6 +247,11 @@ matriz = [[1,2,3],[4,5,6],[7,8,9]]
 Linha_i_coluna_j = matriz[i][j]
 
 matriz[1][2] = 3 # Atribuicao de valor a um elemento
+
+# Impressao dos elementos de uma matriz
+for linha in matriz:
+    for coluna in linha:
+        print(coluna)
 ```
 
 ### Strings
@@ -291,6 +272,88 @@ mensagem.split(',') # Imprimira ['Popcorntime', ' Netflix', ' Telecine']
 
 # Conversao de string em lista
 mensagem.list()
+```
+
+### Dicionários
+
+Dicionário é uma estrutura de dado do tipo Chave:Valor, em que cada Valor pode ser acessado pela sua Chave.
+
+```python
+Dic  = {"Um": 1, "Dois":2, "Tres":3}
+Idade = {"Maria": 21, "Joao": 30, "Ana":30}
+```
+
+#### Funções Úteis para Dicionários
+
+```python
+# Criar dicionario vazio
+dic = {}
+
+# Inserindo elementos no dic
+dic["Carlos"] = 30
+
+# Modificando um elemento do dicionario
+dic.update({"Maria":10}
+
+# Tamanho do dicionario
+len(dic)
+
+# Acessando itens (valores)
+dic["nome_da_chave"]
+
+# Remover do dic
+del dic["chave"]
+
+# Acessando os valores
+dic.values()
+
+# Acessando todas as tuplas
+dic.items()
+
+# Acessando todas as chaves
+dic.keys()
+```
+
+#### Tipos de dados
+
+Dicionários podem armazenar uma grande variedade de tipos de dados: Inteiros, Reais, Strings, etc.
+Porém, além disso, podem armazenar, também, Listas como valores:
+
+```python
+L=[1,2,3]
+Idades.[“Lista”] = L
+print(Idades)
+# Sera printado {'Maria': 21, 'Joao': 30, 'Ana': 30, 'lista': [1, 2, 3]}
+```
+
+Também é possível armazenar outros dicionários!
+
+```python
+Dic = {'dic1’: {'Maria': 21, 'Joao': 30, 'Ana': 30}, 'dic2': {'um': 1, 'dois': 2}}
+```
+
+### Funções
+
+Uma função é uma sequência de instruções que computa um ou mais resultados que chamamos de parâmetros.
+Em Python, as funções possuem as seguintes características:
+* A ordem dos argumentos tem que ser a mesma
+* Podem não receber nenhum parâmetro
+* São definidas no início do código, como boas práticas
+* A função só é executada quando é chamada
+* Uma função pode chamar outra função
+
+> **Importante**
+> Sempre se atente à indentação (espaços ou tabs antes dos comandos) para que o interpretador saiba a execução correta!
+
+```python
+def funcao(parametro1, parametro2):
+    
+    # Corpo da funcao
+
+    return valor # Valor que a funcao retorna (pode nao retornar nada)
+
+# Chamando a funcao
+valor = funcao(argumento1, argumento2)
 ```
 
 ### Recursividade
